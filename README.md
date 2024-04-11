@@ -77,11 +77,8 @@
 
 이전에는 데이팅의 진행 및 데이터 수집 방식에 대한 이해 없이 분석을 진행하였으나 이번에는 데이터를 통해 알아낸 후에 분석하였으며 아래와 같다.
 
-<aside>
-🗣️ 스피드 데이팅은 한 wave의 그룹 안에서 있는 모든 이성과 한번씩 동시에 진행되고 성비가 맞지 않더라도 남는 인원이 대기하는 방식으로 진행되어 모든 이성과 매치된다. 
-여성은 같은 position을 가지고 남성은 모든 position을 가지고 있는 것으로 보아 남성이 자리를 옮기는 방식으로 진행된다.
-
-</aside>
+> 🗣️ 스피드 데이팅은 한 wave의 그룹 안에서 있는 모든 이성과 한번씩 동시에 진행되고 성비가 맞지 않더라도 남는 인원이 대기하는 방식으로 진행되어 모든 이성과 매치된다. 
+> 여성은 같은 position을 가지고 남성은 모든 position을 가지고 있는 것으로 보아 남성이 자리를 옮기는 방식으로 진행된다.
 
 이를 통해 스피드 데이팅 데이터를 기록하기 위한 요소 즉, 분석과 관계없는 요소가 있음(ex. positin1 - 맨 처음에 데이트한 상대와 만난 position)을 발견하였고 제거하였다.
 
@@ -101,29 +98,23 @@
 
 <img width="566" alt="스크린샷 2024-04-07 오후 10 32 05" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/3b08f6cb-009a-4885-bf2b-f4a8e0f03fe5">
 
-<aside>
-🗣️ 서로 연관성이 높은 (0.4기준) 변수끼리 하나의 변수로 생성한다.
-museums + art + theater + concerts + movies + music -> `culture`
-exercise + sports + tvsports -> `active`
-
-나머지는 서로 연관성이 거의 없는 취미이므로 정적인 취미와 동적인 취미로 나누어 묶어주었다.
-hiking + yoga + clubbing -> `dynamic`
-dining + gaming + reading + tv + shopping -> `static`
-
-</aside>
+> 🗣️ 서로 연관성이 높은 (0.4기준) 변수끼리 하나의 변수로 생성한다.
+> museums + art + theater + concerts + movies + music -> `culture`
+> exercise + sports + tvsports -> `active`
+> 
+> 나머지는 서로 연관성이 거의 없는 취미이므로 정적인 취미와 동적인 취미로 나누어 묶어주었다.
+> hiking + yoga + clubbing -> `dynamic`
+> dining + gaming + reading + tv + shopping -> `static`
 
 5. **변수 제거 과정에서 가설을 세우고 상관계수를 확인**
 
-<aside>
-🗣️ **가설 : `go_out`(외출횟수)와 `date`(데이트를얼마나자주하는지)가 비슷한 의미를 갖는다. (상관관계가 있을 것이다.)**
-
-</aside>
+> 🗣️ **가설 : `go_out`(외출횟수)와 `date`(데이트를얼마나자주하는지)가 비슷한 의미를 갖는다. (상관관계가 있을 것이다.)**
 
 **상관계수**가 `0.33`, **p-value**가 `0에 매우 가까운 수`(7.705532e-167)이므로 두 변수가 약한 선형관계를 가지나 유의미한 상관계임을 확인하여 가설을 입증했다. 
 
 **상관관계가 높은 변수는 모델의 성능을 저하**시킬 수 있으므로 이 중 연애과 관련이 상대적으로 적은 go_out변수를 제거하기로 결정하였다.
 
-![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/d86e630f-5b6d-41d3-b7cf-64dcb90c6c46)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/ce4ea6ba-faf2-4617-ae38-59df37412540)
+<img width="406" alt="스크린샷 2024-04-08 오후 4 21 21" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/aaad1932-3ce0-490a-b3f2-2ba53da0d7c4">
 
 
 6. **모델의 성능을 저하할 수 있는 요소들을 제거**
@@ -137,19 +128,17 @@ dining + gaming + reading + tv + shopping -> `static`
 
 **`나이별로 소개팅에서 중요하게 생각하는 요소와 성공 요소가 다를것이라는 가설`을 세워** 35세 이상의 참가자들은 **같은 종교인 것이 얼마나 중요한지** 나타내는 변수 ‘imprelig’에서 **높은 점수에 많이 응답**하였음을 확인하였다.
 
-![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/fabe4649-db4d-48c5-92d7-0817ec90d5f0)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/02a3929b-743f-46a4-ae54-1447f85cb829)
-
+<img width="294" alt="스크린샷 2024-04-01 오후 9 15 45" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/32d41eec-6fcf-4ac6-af7b-03065966eef9">
 
 추가로, 매칭 여부에 따른 imprelig의 분포를 확인해 보았을 때 30대 초반 그룹에서는 매칭이 된 경우에서 더 높은 점수에 분포하고 35세 이상 그룹에서는 **매칭이 안된 경우에서 더 높은 점수**에 분포한다.
 
-![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/8dd101f3-0bf7-42ec-8849-36312a4975c9)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/2eb395fa-9815-4f6e-82f5-860845745409)
-
+<img width="482" alt="스크린샷 2024-04-02 오후 6 26 59" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/85fc88e6-bee4-4df6-b3c9-5f4ffd7c20c7">
 
 이를 통해 **35세 이상은 같은 종교임을 중요하게 생각한다**는 것을 다시한번 알 수 있다.
 
 ### **✅ 인사이트2 : 이상형과 실제로 선택한 상대의 특성은 다르다.**
 
-![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/ce3622a6-d39c-40d5-be09-d09510461318)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/2759b5b8-fcf0-4654-a795-7763f4f6ce5e)
+<img width="903" alt="스크린샷 2024-04-01 오후 9 41 02" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/57f14fca-ceb4-4fd6-a091-0f35f97ef04a">
 
 **`성별 별로 소개팅에서 중요하게 생각하는 요소와 성공 요소가 다를 것이라는 가설`을 세워 이상형**으로 **남성은 매력**을, **여성은 지성**에 가장 높은 점수를 주었으며
 
@@ -163,12 +152,11 @@ dining + gaming + reading + tv + shopping -> `static`
 
 여기서 **숫자가 낮을수록 더 자주 외출**하는 것을 나타내며, 특히 7은 거의 외출하지 않음을 나타낸다. 따라서 **가설이 입증**되었음을 확인할 수 있다.
 
-![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/4dbee3de-fa66-4f65-9f2e-2bc3f7497776)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/9ef3d143-ffd4-420b-aafb-8377c3e9949c)
-
+<img width="506" alt="스크린샷 2024-04-02 오후 7 53 08" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/15aa9027-f3b5-48ec-913e-760bf7672d6f">
 
 ### **✅ 인사이트4 : 같은 직업, 분야를 가진 상대와의 소개팅 성공률은 높다.**
 
-![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/8a65b7f5-02c8-481d-b3a6-ec86fb239eef)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/e23f9103-9aa5-4917-9b16-5502adbd3490)
+<img width="888" alt="스크린샷 2024-04-02 오후 7 54 37" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/457e9106-c647-44dc-ab8f-c27efb1c4905">
 
 **`같은 직업, 분야일수록 소개팅 성공률은 높을 것이라는 가설`을 세워 같은 직업이나 분야를 가진 상대**와 소개팅한 경우에서 소개팅 **성공률이 상대적으로 높음**을 확인하였다.
 
@@ -179,24 +167,25 @@ dining + gaming + reading + tv + shopping -> `static`
 ## 모델링
 
 > **랜덤 포레스트**
-랜덤 포레스트는 다양한 트리들을 생성하고 그들의 예측을 결합함으로써 높은 성능을 제공하여 과적합을 줄이고, 안정적인 예측을 할 수 있다.
 > 
+> 랜덤 포레스트는 다양한 트리들을 생성하고 그들의 예측을 결합함으로써 높은 성능을 제공하여 과적합을 줄이고, 안정적인 예측을 할 수 있다.
 
-앞서 남녀가 응답에 있어 차이를 보임을 확인하여 나누어 모델링을 진행하기로 결정하였다.
+
+앞서 남녀가 응답에 있어 차이를 보임을 확인하여 **나누어 모델링을 진행**하기로 결정하였다.
 
 ### **남성에 대하여 모델링한 결과**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/59969177-eab0-4322-bb3d-afe086df85e4/Untitled.png)
+<img width="714" alt="스크린샷 2024-04-08 오후 10 41 00" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/388f6dd3-c87d-4fb8-9840-c9c70c58f025">
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/ba21dd3a-4be9-41ba-9d8b-3789830e8285/Untitled.png)
+<img width="703" alt="스크린샷 2024-04-08 오후 7 25 48" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/b564ac02-ce5d-41e2-bee9-1afa54bfa3e2">
 
 남성의 모델링 결과 변수 중요도가 비슷함, 매력, 재미, 상대와 나와 일치하는 정도 순으로 나타났으며 모델 평가 결과는 오른쪽과 같다.
 
 ### **여성에 대하여 모델링한 결과**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/da82a242-2b15-4843-927f-fe916a318976/Untitled.png)
+<img width="707" alt="스크린샷 2024-04-08 오후 10 43 28" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/7ccf9d0b-0128-4a14-8e7d-b83cc5ae7558">
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/8286b245-a89e-428a-83c0-17f5ae29126f/Untitled.png)
+<img width="704" alt="스크린샷 2024-04-08 오후 10 42 32" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/c72bf94f-75c9-4ee0-9c3d-a00e309ee004">
 
 여성의 모델링 결과 변수 중요도가 비슷함, 매력, 진실성, 재미, 상대와 나와 일치하는 정도 순으로 나타났으며 모델 평가 결과는 오른쪽과 같다.
 
