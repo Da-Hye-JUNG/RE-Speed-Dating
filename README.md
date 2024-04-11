@@ -99,7 +99,7 @@
 
 지난 프로젝트에서는 변수를 임의로 선택하여 병합하는 방식으로 생성했지만, 이번에는 **히트맵으로 시각화한 상관관계를 참고하며 변수를 병합**하여 더욱 **유의미한 변수를 생성**하였다.
 
-![image|4x4](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/ae1e8b1b-42a2-47db-bb9f-9da992f92134)![image|4x4](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/fbf617ca-e532-4652-8137-ec7f507d7ba0)
+<img width="566" alt="스크린샷 2024-04-07 오후 10 32 05" src="https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/3b08f6cb-009a-4885-bf2b-f4a8e0f03fe5">![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/227a42cc-e92b-4fcf-904e-c994e942c765)
 
 
 <aside>
