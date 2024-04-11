@@ -104,7 +104,8 @@
 
 지난 프로젝트에서는 변수를 임의로 선택하여 병합하는 방식으로 생성했지만, 이번에는 **히트맵으로 시각화한 상관관계를 참고하며 변수를 병합**하여 더욱 **유의미한 변수를 생성**하였다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/c510cf82-e7a1-4217-b1fb-3547d638a906/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/ae1e8b1b-42a2-47db-bb9f-9da992f92134)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/fbf617ca-e532-4652-8137-ec7f507d7ba0)
+
 
 <aside>
 🗣️ 서로 연관성이 높은 (0.4기준) 변수끼리 하나의 변수로 생성한다.
@@ -128,7 +129,8 @@ dining + gaming + reading + tv + shopping -> `static`
 
 **상관관계가 높은 변수는 모델의 성능을 저하**시킬 수 있으므로 이 중 연애과 관련이 상대적으로 적은 go_out변수를 제거하기로 결정하였다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/c5234eec-631d-47bf-9af3-f5f5fce72712/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/d86e630f-5b6d-41d3-b7cf-64dcb90c6c46)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/ce4ea6ba-faf2-4617-ae38-59df37412540)
+
 
 6. **모델의 성능을 저하할 수 있는 요소들을 제거**
 
@@ -141,17 +143,19 @@ dining + gaming + reading + tv + shopping -> `static`
 
 **`나이별로 소개팅에서 중요하게 생각하는 요소와 성공 요소가 다를것이라는 가설`을 세워** 35세 이상의 참가자들은 **같은 종교인 것이 얼마나 중요한지** 나타내는 변수 ‘imprelig’에서 **높은 점수에 많이 응답**하였음을 확인하였다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/a5099fc8-7003-48f6-908a-f6ae451c1466/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/fabe4649-db4d-48c5-92d7-0817ec90d5f0)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/02a3929b-743f-46a4-ae54-1447f85cb829)
+
 
 추가로, 매칭 여부에 따른 imprelig의 분포를 확인해 보았을 때 30대 초반 그룹에서는 매칭이 된 경우에서 더 높은 점수에 분포하고 35세 이상 그룹에서는 **매칭이 안된 경우에서 더 높은 점수**에 분포한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/36eb4919-2804-4821-8e13-01cb380cae5d/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/8dd101f3-0bf7-42ec-8849-36312a4975c9)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/2eb395fa-9815-4f6e-82f5-860845745409)
+
 
 이를 통해 **35세 이상은 같은 종교임을 중요하게 생각한다**는 것을 다시한번 알 수 있다.
 
 ### **✅ 인사이트2 : 이상형과 실제로 선택한 상대의 특성은 다르다.**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/7afff117-0a40-4e69-ac35-c388e9acd43e/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/ce3622a6-d39c-40d5-be09-d09510461318)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/2759b5b8-fcf0-4654-a795-7763f4f6ce5e)
 
 **`성별 별로 소개팅에서 중요하게 생각하는 요소와 성공 요소가 다를 것이라는 가설`을 세워 이상형**으로 **남성은 매력**을, **여성은 지성**에 가장 높은 점수를 주었으며
 
@@ -165,11 +169,12 @@ dining + gaming + reading + tv + shopping -> `static`
 
 여기서 **숫자가 낮을수록 더 자주 외출**하는 것을 나타내며, 특히 7은 거의 외출하지 않음을 나타낸다. 따라서 **가설이 입증**되었음을 확인할 수 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/064ace19-afa9-4651-9fdf-02994248f1cd/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/4dbee3de-fa66-4f65-9f2e-2bc3f7497776)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/9ef3d143-ffd4-420b-aafb-8377c3e9949c)
+
 
 ### **✅ 인사이트4 : 같은 직업, 분야를 가진 상대와의 소개팅 성공률은 높다.**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/97ae9738-716c-41e9-8d6a-2e66dca980b9/06a47b2c-bf71-459e-a47c-664a96e1b314/Untitled.png)
+![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/8a65b7f5-02c8-481d-b3a6-ec86fb239eef)![image](https://github.com/Da-Hye-JUNG/RE-Speed-Dating/assets/96599427/e23f9103-9aa5-4917-9b16-5502adbd3490)
 
 **`같은 직업, 분야일수록 소개팅 성공률은 높을 것이라는 가설`을 세워 같은 직업이나 분야를 가진 상대**와 소개팅한 경우에서 소개팅 **성공률이 상대적으로 높음**을 확인하였다.
 
